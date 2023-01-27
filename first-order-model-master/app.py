@@ -43,5 +43,3 @@ if st.button('button'):
   
     response = display(source_image, target_video, predictions).to_html5_video()
     st.markdown(response, unsafe_allow_html=True)
-
-st.button

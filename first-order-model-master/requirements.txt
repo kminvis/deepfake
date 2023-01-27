@@ -1,5 +1,5 @@
+pandas
 wheel==0.38.4
-pandas==1.0.5
 torch==1.13.1
 torchvision==0.2.1
 tqdm==4.64.1

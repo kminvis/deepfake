@@ -34,7 +34,7 @@ if st.button('button'):
 
     from part_swap import load_checkpoints
     reconstruction_module, segmentation_module = load_checkpoints(config='config/vox-256-sem-15segments.yaml', 
-                                                   checkpoint='/content/gdrive/My Drive/DeepFake/vox-15segments.pth.tar',
+                                                   checkpoint='vox-15segments.pth.tar',
                                                    blend_scale=1)
 
     from part_swap import make_video

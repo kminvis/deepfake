@@ -42,4 +42,4 @@ def display(source, target, generated=None):
     return ani
 
 response = display(source_image, target_video, predictions).to_html5_video()
-st.write(source_image)
+st.markdown(response, unsafe_allow_html=True)

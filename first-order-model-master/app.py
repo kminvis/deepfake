@@ -1,3 +1,5 @@
+import streamlit as st  # pylint: disable=import-error
+from streamlit.components.v1 import html
 import imageio
 import numpy as np
 import matplotlib.pyplot as plt
@@ -40,4 +42,5 @@ def display(source, target, generated=None):
     plt.close()
     return ani
 
-HTML(display(source_image, target_video, predictions).to_html5_video())
+response = HTML(display(source_image, target_video, predictions).to_html5_video())
+st.write(response)
